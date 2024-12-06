@@ -1,0 +1,28 @@
+{
+  "name": "playwright-interview",
+  "version": "1.0.0",
+  "description": "A Playwright-driven test suite for automated testing of a demo application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chromium": "npx playwright test --project chromium",
+    "test:first": "npx playwright test --grep @firstTest",
+    "test:local": "BASE_URL=http://localhost:4200 npx playwright test",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:ui": "npx playwright test --ui",
+    "test:cg": "npx playwright codegen",
+    "clean": "rimraf node_modules"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.1"
+  }
+}
